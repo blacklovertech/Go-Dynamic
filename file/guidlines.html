@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootstrap-icons%401.8.1/font/bootstrap-icons.css">
+    <link href='../cdn.jsdelivr.net/npm/boxicons%402.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="index.css" rel="stylesheet">
+
+    <title>GO DYANAMIC</title>
+    <link rel="icon" href="assets/logoo.png" type="image/icon type">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-2" id="home">
+        <div class="container-fluid">
+            <img src="assets/logoo.png" alt="logo_1" style="width: 50px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="venue.html">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link active" onClick="window.location.reload(); "  aria-current="page"   href="guidlines.html">Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Media</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">First Item</a>
+                            <a class="dropdown-item" href="#">Second Item</a>
+                            <a class="dropdown-item" href="#">Third Item</a>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#" target="_blank"><button
+                            class="btn btn-outline-success" type="submit">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+<br>
+<!-- Guidelines -->
+<section>
+    <div class="container" id="guide">
+        <div class="row align-items-center justify-content-center">
+            <div class="guide-heading">
+                    <h3>Guidelines</h3>
+                </div>
+                
+            <div class="col-md-6 guide-content">
+                <br>
+                <ol>
+                    <li>Each participant should carry identity card.</li>
+                    <li>The registration fee for KARE students is <strong>Rs.100/-</strong> per participant.</li>
+                    <li>The registration fee for external students is <strong>Rs.200/-</strong> per participant.</li>
+                    <li>Participants should be registered on or before <strong>27th April, 2022</strong></li>
+                    <li>There is no restriction for participating in various events unless the timings of two events
+                        coincide.</li>
+                    <li>All the events will commence at the scheduled time; Punctuality will be
+                        appreciated. </li>
+                    <li>Lunch will be provided.</li>
+                    <li>The decision of judges will be final.</li>
+                    <li>Violation of rules & regulations are prohibited.</li>
+                    <li>Discipline is mandatory inside the Campus.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+
+
+<!-- Footer -->
+    <section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <p class="footer__title">GO DYNAMIC</p>
+                        <div class="footer__social">
+                            <a href="https://www.youtube.com/" target="_blank"
+                                class="footer__icon"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__icon"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="mailto:@gmail.com" target="_blank" class="footer__icon"><i
+                                    class="bi bi-envelope"></i></a>
+                        </div>
+                        <p>Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                        </p>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Go to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--MAIN JS-->
+    <script src="index.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
